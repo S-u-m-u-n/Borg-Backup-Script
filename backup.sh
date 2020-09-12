@@ -58,6 +58,7 @@ $BORG_EXEC					\
         --verbose                               \
 	--stats					\
 	--list					\
+	--exclude '/home/*/.cache/*'    	\
 	::{hostname}-{now:%Y-%m-%dT%H:%M:%S}	\
 	/home/$USER 			        \
 	>> $LOGPATH/$LOGFILE 2>&1
